@@ -1,0 +1,19 @@
+tune_config:
+  mode: "max"
+  metric: "reward/mean"
+  search_alg: "random"
+  scheduler: "fifo"
+  num_samples: 32
+
+model.num_layers_unfrozen:
+  strategy: "choice"
+  values: [-1, 1, 2, 3]
+
+# disable checkpointing for storage sake
+train.checkpoint_interval:
+  strategy: "choice"
+  values: [10000000]
+train.save_best:
+  strategy: "choice"
+  values: [false]
+
