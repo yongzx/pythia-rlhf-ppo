@@ -1,0 +1,13 @@
+# Any wandb files
+wandb/
+
+# Any .out files
+*.out
+
+# Model checkpoints
+checkpoints/
+
+# Python generated files
+__pycache__/
+.ipynb_checkpoints/
+
